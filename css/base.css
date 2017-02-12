@@ -1,0 +1,48 @@
+body,p,h1,h2,h3,h4,h5,ul,ol,::before,::after {
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: transparent;	/*清除ios下点击高亮的默认效果*/
+}
+img {
+	border: none;
+	vertical-align: top;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+i,strong,em {
+	font-style: normal;
+	font-weight: normal;
+}
+li {
+	list-style: none;
+}
+input,button,textarea {
+	border: none;
+	resize: none;
+	outline: none;
+	-webkit-appearance: none; /*清除浏览器默认的样式*/
+}
+body {
+	font-family: "微软雅黑",sans-serif;
+	font-size: 14px;
+	color: #000;
+}
+
+/*清除浮动的样式*/
+.clearfix::before ,
+.clearfix::after {
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+/*所有图片的通用样式*/
+[class^="jd-bg"],[class*=" jd-bg"] {
+	background: url(../img/jd.png) no-repeat;
+	background-size: 200px 200px;
+}

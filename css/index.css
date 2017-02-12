@@ -1,0 +1,614 @@
+@charset "utf-8";
+
+/*京东外盒子的样式*/
+.jd_wrap {
+	min-width: 320px;
+	max-width: 640px;
+	position: relative;
+	margin: 0 auto;
+	padding-bottom: 46px;
+}
+
+/*头部样式*/
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+}
+#header .header-box {
+	min-width: 320px;
+	max-width: 640px;
+	width: 100%;
+	height: 40px;
+	margin: 0 auto;
+	background: #D03844;
+	position: relative;
+}
+#header .logo {
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+#header .logo a {
+	display: block;
+	width: 56px;
+	height: 40px;
+	text-indent: -9999em;
+	background: url(../img/logo.jpg) no-repeat;
+}
+#header .form {
+	position: relative;
+	top: 5px;
+	padding-left: 75px;
+	padding-right: 45px;
+}
+#header .form .jd-bg-seach {
+	display: block;
+	width: 15px;
+	height: 14px;
+	background-position: -83px 0;
+	position: absolute;
+	top: 8px;
+	left: 85px;
+}
+#header .form input {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 15px;
+	text-indent: 30px;
+}
+#header .user {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+}
+#header .user .jd-bg-user {
+	display: block;
+	width: 18px;
+	height: 20px;
+	background-position: -126px -32px;
+}
+
+
+/*轮播图样式*/
+
+.banner .swiper-container {
+    width: 100%;
+    height: 286px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.banner .swiper-slide img {
+	width: 100%;
+	height: 286px;
+}
+
+/*轮播下的导航样式*/
+#jd_nav {
+	height: 150px;
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    background: #fff;
+    padding-top: 11px;
+}
+#jd_nav ul {
+	width: 100%;
+}
+#jd_nav ul li {
+	float: left;
+	width: 25%;
+	height: 69px;
+}
+#jd_nav ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+#jd_nav ul li a p{
+    font-size: 12px;
+    color: #666;
+    padding-top: 6px;
+}
+#jd_nav ul li a img {
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+/*京东秒杀区的样式*/
+.jd_seckill .jd_seckill_top {
+	width: 100%;
+	height: 34px;
+}
+.jd_seckill .jd_seckill_top img {
+	width: 69px;
+	height: 27px;
+	display: block;
+	float: left;
+	padding: 7px 10px 0 0;
+}
+.jd_seckill .seckill_cc {
+	line-height: 38px;
+	font-size: 12px;
+	float: left;
+}
+.jd_seckill .jd_seckill_time {
+	padding: 8px 0 0 10px;
+}
+.jd_seckill .jd_seckill_time,
+.jd_seckill .jd_seckill_time .seckill_h,
+.jd_seckill .jd_seckill_time .seckill_mh,
+.jd_seckill .jd_seckill_time .seckill_m,
+.jd_seckill .jd_seckill_time .seckill_s {
+	float: left;
+}
+.jd_seckill .jd_seckill_time .seckill_h,
+.jd_seckill .jd_seckill_time .seckill_m,
+.jd_seckill .jd_seckill_time .seckill_s {
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	border: 1px solid #EFEFEF;
+}
+.jd_seckill .jd_seckill_top_left {
+	width: 65%;
+	display: block;
+	float: left;
+}
+.jd_seckill .jd_seckill_top_right {
+	display: block;
+	width: 35%;
+	line-height: 34px;
+	text-align: right;
+	color: #f23030;
+	font-size: 12px;
+	float: right;
+}
+.jd_seckill .jd_seckill_top_right .jd_more {
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	background: url(../img/jd_more.png) no-repeat;
+	background-size: cover;
+}
+.jd_seckill .jd_seckill_body {
+	width: 100%;
+	border-bottom: 1px solid #F7F7F7;
+	overflow: hidden;
+}
+.jd_seckill .jd_seckil_pro {
+	width: 100%;
+}
+.jd_seckill .jd_seckil_pro li {
+	float: left;
+	width: 33.333%;
+}
+.jd_seckill .jd_seckil_pro li a {
+	display: block;
+}
+.jd_seckill .jd_seckil_pro li a img {
+	display: block;
+	width: 100%;
+}
+.jd_seckill .jd_seckil_pro li a span {
+	display: block;
+	text-align: center;
+}
+.jd_seckill .jd_seckil_pro .now_pirce {
+	font-size: 16px;
+	color: #F23030;
+}
+.jd_seckill .jd_seckil_pro .old_price {
+	font-size: 12px;
+	color: #686868;
+	text-decoration: line-through;
+}
+
+/*圣诞区的样式*/
+.jd_sd .jd_sd_header img {
+	width: 100%;
+}
+.jd_sd .jd_sd_body .jd_sd_hongbao,
+.jd_sd .jd_sd_body .jd_sd_jiadian {
+	width: 50%;
+	float: left;
+}
+.jd_sd .jd_sd_body .jd_sd_hongbao a img,
+.jd_sd .jd_sd_body .jd_sd_jiadian a img {
+	width: 100%;
+}
+.jd_sd .jd_sd_pro {
+	
+}
+.jd_sd .jd_sd_pro li {
+	float: left;
+	width: 25%;
+}
+.jd_sd .jd_sd_pro li a {
+	
+}
+.jd_sd .jd_sd_pro li a img {
+	width: 100%;
+}
+
+/*排行区的样式*/
+.jd_ph .jd_mode,
+.jd_ph .jd_mode_hot {
+	float: left;
+}
+.jd_ph{
+	width: 100%;
+}
+
+/*通用模板的样式*/
+.jd_mode {
+	width: 50%;
+}
+.jd_mode .mode_left,
+.jd_mode .mode_right {
+	float: left;
+	width: 50%;
+}
+.jd_mode h2 {
+	font-size: 28px;
+	color: #181818;
+	font-weight: normal;
+}
+.jd_mode p {
+	font-size: 22px;
+	color: #686868;
+}
+.jd_mode .mode_right img {
+	width: 100%;
+}
+.jd_mode_hot {
+	width: 50%;
+}
+.jd_mode_hot .mode_left,
+.jd_mode_hot .mode_right {
+	float: left;
+	width: 50%;
+}
+.jd_mode_hot h2 {
+	font-size: 28px;
+	color: #181818;
+	font-weight: normal;
+}
+.jd_mode_hot p {
+	font-size: 22px;
+	color: #686868;
+}
+.jd_mode_hot .mode_hot {
+	display: block;
+	font-size: 12px;
+	width: 74px;
+	height: 14px;
+	line-height: 14px;
+	text-align: center;
+	color: #fff;
+	padding: 5px 0;
+	background: #FF4A7D;
+}
+.jd_mode_hot .mode_right img {
+	width: 100%;
+}
+
+/*爱生活区样式*/
+.love_life {
+	width: 100%;
+}
+.love_life .love_life_title img {
+	width: 100%;
+}
+.love_life .jd_mode,
+.love_life .jd_mode_hot {
+	width: 50%;
+	float: left;
+}
+.love_life .jd_mode2,
+.love_life .jd_mode3 {
+	float: left;
+}
+/*通用模板2样式*/
+.jd_mode2 {
+	width: 25%;
+	position: relative;
+}
+.jd_mode2 .mode2_left h2 {
+	font-size: 28px;
+	color: #181818;
+	font-weight: normal;
+}
+.jd_mode2 .mode2_left p {
+	font-size: 22px;
+	color: #686868;
+}
+.jd_mode2 .mode2_hot {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 66px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	background: #FF4A7D;
+	color: #fff;
+}
+.jd_mode2 .mode2_right img {
+	width: 100%;
+}
+
+/*通用模板3样式*/
+.jd_mode3 {
+	width: 25%;
+}
+.jd_mode3 .mode3_left h2 {
+	font-size: 28px;
+	color: #181818;
+	font-weight: normal;
+}
+.jd_mode3 .mode3_left p {
+	font-size: 22px;
+	color: #686868;
+}
+.jd_mode3 .mode3_right img {
+	width: 100%;
+}
+
+/*小轮播图样式*/
+.s_banner {
+	width: 100%;
+	height: 150px;
+}
+.s_banner .s_banner_wrap {
+	height: 150px;
+	border: 4px solid #F3F3F3;
+}
+.s_banner .swiper-slide img {
+	width: 100%;
+	height: 150px;
+}
+
+/*享品质区的样式*/
+.xiang{
+	width: 100%;
+}
+.xiang .xiang_title img {
+	width: 100%;
+	display: block;
+}
+.xiang .jd_mode,
+.xiang .jd_mode_hot {
+	float: left;
+}
+.xiang .mode_hot {
+	background: #952DFF;
+}
+
+/*为你推荐区的样式*/
+.jd_tuijian {
+	width: 100%;
+	padding: 25px 0;
+	background: #F0F2F5;
+}
+.jd_tuijian .jd_hr {
+	border-top: 1px solid #ccc;
+	position: relative;
+}
+.jd_tuijian .jd_hr .jd_tuijian_header {
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	width: 80px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	background: #F0F2F5;
+	margin-left: -40px;
+}
+
+/*推荐商品样式*/
+.jd_tuijian_box {
+	width: 100%;
+}
+.jd_tuijian_pro {
+	width: 50%;
+	float: left;
+}
+.jd_tuijian_pro .pro_pic {
+	width: 100%;
+}
+.jd_tuijian_pro .pro_pic img {
+	width: 100%;
+}
+.jd_tuijian_pro .pro_title {
+	height: 34px;
+	font-size: 13px;
+	color: #232326;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display:-webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+	padding: 4px 4px 0 4px;
+}
+.jd_tuijian_pro .pro_price {
+	padding: 0 4px;
+	line-height: 30px;
+}
+.jd_tuijian_pro .pro_price .price {
+	float: left;
+	color: #F34040;
+}
+.jd_tuijian_pro .pro_price .pro_class {
+	float: right;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #686868;
+	border: 1px solid #E7E7E7;
+	cursor: pointer;
+}
+
+/*底部区样式*/
+#footder {
+	width: 100%;
+	padding-top: 4px;
+	background: #F3F5F7;
+}
+/*点击加载更多*/
+#footder .click_more {
+	width: 100%;
+}
+#footder .click_more .click_link {
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	border-top: 1px solid #D9DADB;
+	border-bottom: 1px solid #D9DADB;
+	text-align: center;
+	font-size: 14px;
+	color: #686868;
+}
+
+/*底部导航*/
+#footder .footer_nav {
+	width: 100%;
+	border-bottom: 1px solid #D9DADB;
+	padding: 10px 0;
+}
+#footder .footer_nav ul {
+	width: 320px;
+	margin: 0 auto;
+}
+#footder .footer_nav ul li {
+	float: left;
+	width: 24%;
+	text-align: center;
+}
+#footder .footer_nav ul li + li {
+	border-left: 1px solid #D9DADB;
+}
+#footder .footer_nav ul li a {
+	display: block;
+	font-size: 12px;
+	color: #848689;
+}
+
+/*客户端*/
+#footder .footer_kfd_box {
+	width: 100%;
+	border-bottom: 1px solid #D9DADB;
+}
+#footder .footer_kfd {
+	width: 320px;
+	margin: 0 auto;
+	padding: 6px 0;
+}
+#footder .footer_kfd li {
+	width: 33.33%;
+	float: left;
+}
+#footder .footer_kfd li a {
+	display: block;
+	height: 50px;
+	margin: 0 auto;
+	background: url(../img/footer_nav.jpg) no-repeat;
+}
+#footder .footer_kfd .footer_kfd_app a {
+	width: 37px;
+	background-position: 0 0;
+}
+#footder .footer_kfd .footer_kfd_modia a {
+	width: 35px;
+	background-position: -37px 0;
+}
+#footder .footer_kfd .footer_kfd_pc a {
+	width: 35px;
+	background-position: -72px 0;
+}
+
+/*版权*/
+#footder .footer_bq {
+	width: 100%;
+	padding: 10px 0;
+}
+#footder .footer_bq p {
+	width: 320px;
+	margin: 0 auto;
+	text-align: center;
+	color: #848689;
+	font-size: 12px;
+}
+/*底部浮动导航栏样式*/
+#nav {
+	width: 100%;
+	height: 44px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+}
+#nav ul li {
+	float: left;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+}
+#nav ul img {
+	width: 57px;
+	height: 44px;
+}
+
+
+/*媒体查询控制字体*/
+@media only screen and (min-width: 100px) and (max-width: 536px) {
+	
+	/*媒体查询控制通用模板的样式*/
+	.jd_mode h2,
+	.jd_mode_hot h2 {
+		font-size: 14px;
+	}
+	.jd_mode p,
+	.jd_mode_hot p {
+		font-size: 12px;
+	}
+	
+	/*通用模板2样式*//*通用模板3样式*/
+	.jd_mode2 .mode2_left h2,
+	.jd_mode3 .mode3_left h2 {
+		font-size: 14px;
+	}
+	.jd_mode2 .mode2_left p,
+	.jd_mode3 .mode3_left p {
+		font-size: 12px;
+	}
+	
+	
+}
